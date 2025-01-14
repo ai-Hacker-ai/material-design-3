@@ -1,5 +1,22 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - layout_properties: {grid_position: 'HXNVLN,OTTHNV'}
+    name: student_dropdown
+    properties: {}
+    type: DropDown
+  - layout_properties: {grid_position: 'HXNVLN,GNABCS'}
+    name: date_picker
+    properties: {}
+    type: DatePicker
+  - layout_properties: {grid_position: 'NHVWTK,BTJPPD'}
+    name: view_attendance_button
+    properties: {text: button_1}
+    type: Button
+  - layout_properties: {grid_position: 'VOBSPU,UAWBGH'}
+    name: attendance_repeating_panel
+    properties: {item_template: View_Attendance_Interface.ItemTemplate1}
+    type: RepeatingPanel
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel
