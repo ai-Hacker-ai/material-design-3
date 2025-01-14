@@ -1,5 +1,22 @@
 components:
-- layout_properties: {slot: default}
+- components:
+  - layout_properties: {grid_position: 'LECTGQ,AJJFET'}
+    name: username_textbox
+    properties: {}
+    type: TextBox
+  - layout_properties: {grid_position: 'EWHEQG,OUWNGM'}
+    name: password_textbox
+    properties: {}
+    type: TextBox
+  - layout_properties: {grid_position: 'VXKIYS,YAUHYT'}
+    name: login_button
+    properties: {align: right, text: button_1}
+    type: Button
+  - layout_properties: {grid_position: 'SDGSTT,SRBJLL'}
+    name: signup_button
+    properties: {align: right, text: button_2}
+    type: Button
+  layout_properties: {slot: default}
   name: content_panel
   properties: {}
   type: ColumnPanel
