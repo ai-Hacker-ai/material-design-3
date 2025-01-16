@@ -13,7 +13,7 @@ components:
     properties: {align: right, text: button_1}
     type: Button
   - layout_properties: {grid_position: 'OVUJQE,LTSGMU'}
-    name: signup_button
+    name: button_2
     properties: {align: right, text: button_2}
     type: Button
   layout_properties: {slot: default}
