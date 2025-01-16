@@ -12,10 +12,13 @@ class Add_Student_Interface(Add_Student_InterfaceTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    def add_student_button_click(self, **event_args):
-        first_name = self.student_first_name_textbox.text
-        last_name = self.student_last_name_textbox.text
-        student_id = self.student_id_textbox.text
+
+  def add_student_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    first_name = self.student_first_name_textbox.text
+    last_name = self.student_last_name_textbox.text
+    student_id = self.student_id_textbox.text
         
-        anvil.server.call('add_student', first_name, last_name, student_id)
-        alert("Student added successfully!")
+    anvil.server.call('add_student', first_name, last_name, student_id)
+    alert("Student added successfully!")
+    pass

@@ -16,7 +16,8 @@ components:
     name: date_picker
     properties: {}
     type: DatePicker
-  - layout_properties: {grid_position: 'NHVWTK,BTJPPD'}
+  - event_bindings: {click: view_attendance_button_click}
+    layout_properties: {grid_position: 'NHVWTK,BTJPPD'}
     name: view_attendance_button
     properties: {text: View Attendance}
     type: Button

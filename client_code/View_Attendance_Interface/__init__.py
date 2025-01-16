@@ -10,14 +10,14 @@ class View_Attendance_Interface(View_Attendance_InterfaceTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    self.student_dropdown.items = anvil.server.call('get_students')
     # Any code you write here will run before the form opens.
-    def __init__(self, **properties):
-        self.init_components(**properties)
-        self.student_dropdown.items = anvil.server.call('get_students')
 
-    def view_attendance_button_click(self, **event_args):
-        selected_student = self.student_dropdown.selected_value
-        selected_date = self.date_picker.selected_date
-        records = anvil.server.call('get_attendance', selected_student, selected_date)
-        self.attendance_repeating_panel.items = records
+  def view_attendance_button_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    selected_student = self.student_dropdown.selected_value
+    selected_date = self.date_picker.selected_date
+    records = anvil.server.call('get_attendance', selected_student, selected_date)
+    self.attendance_repeating_panel.items = records
+    pass
+    

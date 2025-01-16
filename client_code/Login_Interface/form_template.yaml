@@ -16,11 +16,13 @@ components:
     name: password_textbox
     properties: {}
     type: TextBox
-  - layout_properties: {grid_position: 'TZJKUT,WWMRBH'}
+  - event_bindings: {click: login_button_click}
+    layout_properties: {grid_position: 'TZJKUT,WWMRBH'}
     name: login_button
     properties: {align: right, text: Login}
     type: Button
-  - layout_properties: {grid_position: 'OVUJQE,LTSGMU'}
+  - event_bindings: {click: signup_button_click}
+    layout_properties: {grid_position: 'OVUJQE,LTSGMU'}
     name: signup_button
     properties: {align: right, text: sign-up}
     type: Button
