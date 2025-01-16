@@ -1,16 +1,24 @@
 components:
 - components:
-  - layout_properties: {grid_position: 'HXNVLN,OTTHNV'}
+  - layout_properties: {grid_position: 'YEILVG,XOAXUD'}
+    name: label_1
+    properties: {align: center, text: Students}
+    type: Label
+  - layout_properties: {grid_position: 'YEILVG,RAOEHF'}
+    name: label_2
+    properties: {align: center, text: 'Date '}
+    type: Label
+  - layout_properties: {grid_position: 'BKJEPQ,TRVDGW'}
     name: student_dropdown
     properties: {}
     type: DropDown
-  - layout_properties: {grid_position: 'HXNVLN,GNABCS'}
+  - layout_properties: {grid_position: 'BKJEPQ,KLVPQX'}
     name: date_picker
     properties: {}
     type: DatePicker
   - layout_properties: {grid_position: 'NHVWTK,BTJPPD'}
     name: view_attendance_button
-    properties: {text: button_1}
+    properties: {text: View Attendance}
     type: Button
   - layout_properties: {grid_position: 'VOBSPU,UAWBGH'}
     name: attendance_repeating_panel

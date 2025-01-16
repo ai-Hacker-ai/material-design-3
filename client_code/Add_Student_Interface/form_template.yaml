@@ -1,24 +1,36 @@
 components:
 - components:
+  - layout_properties: {grid_position: 'QNYTND,UAWQNK'}
+    name: label_1
+    properties: {text: 'Student first name:'}
+    type: Label
   - layout_properties: {grid_position: 'QNYTND,XDOGDZ'}
     name: student_first_name_textbox
     properties: {}
     type: TextBox
+  - layout_properties: {grid_position: 'MPKEPI,WKMYZX'}
+    name: label_2
+    properties: {text: 'Student last name:'}
+    type: Label
   - layout_properties: {grid_position: 'MPKEPI,XKHOZR'}
     name: student_last_name_textbox
     properties: {}
     type: TextBox
+  - layout_properties: {grid_position: 'GMXHSV,DIYNTN'}
+    name: label_3
+    properties: {text: 'Student ID:'}
+    type: Label
   - layout_properties: {grid_position: 'GMXHSV,LFUVAK'}
     name: student_id_textbox
     properties: {}
     type: TextBox
   - layout_properties: {grid_position: 'XGFZED,DKGARA'}
     name: add_student_button
-    properties: {text: button_1}
+    properties: {text: Add Student}
     type: Button
   layout_properties: {slot: default}
   name: content_panel
-  properties: {}
+  properties: {col_widths: '{"XKHOZR":65,"XDOGDZ":65,"WKMYZX":15,"UAWQNK":15,"LFUVAK":65,"DIYNTN":15}'}
   type: ColumnPanel
 - layout_properties: {slot: nav-right}
   name: navbar_links
