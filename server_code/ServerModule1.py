@@ -17,15 +17,17 @@ import anvil.server
 #@anvil.server.callable
 
 
+
 @anvil.server.callable
 def create_user(username, password, first_name, last_name, staff_id, role):
     app_tables.users.add_row(username=username, password=password, first_name=first_name, last_name=last_name, staff_id=staff_id, role=role)
 
 @anvil.server.callable
 def get_user(username, password):
-    # Fetch the user from the Users table
-    user = app_tables.users.get(username=username, password=password)
-    return user  # This will return the user record if found, or None if not
+    # Search for the user in the Users table
+    user = app_tables.users.search(username=username, password=password)
+    # Return the first matching user or None if no match is found
+    return user.first()  # This will return the first user found or None if not found
 
 @anvil.server.callable
 def add_attendance(student, date, status):
